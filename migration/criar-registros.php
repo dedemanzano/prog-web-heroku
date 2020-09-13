@@ -27,9 +27,9 @@ if ($db->connect()) {
   foreach($deps as $dep) $daoDep->inserir($dep);
 
 
-  $forn[] = new Fornecedores("Americanas","Correios","Rondonópolis", "21","contato@americanas.com");
-  $forn[] = new Fornecedores("Magazine Luiza","Transportadora","Cuiabá", "03","contato@magalu.com");
-  foreach($forn as $forn) $daoForn->inserir($forn);
+  $forns[] = new Fornecedores("Americanas","Correios","Rondonópolis", "21","contato@americanas.com");
+  $forns[] = new Fornecedores("Magazine Luiza","Transportadora","Cuiabá", "03","contato@magalu.com");
+  foreach($forns as $forn) $daoForn->inserir($forn);
 
   $marcas[] = new Marca("Sony");
   $marcas[] = new Marca("LG");
